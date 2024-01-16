@@ -1,0 +1,8 @@
+<nav class="blue lighten-3" >
+  <div class="nav-wrapper"  style="margin: 0 5px">
+    <a routerLink="/pokemon" class="brand-logo">Logo</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li *ngFor="let action of actions" ><a routerLink="/{{action.page}}">{{action.name}}</a></li>
+    </ul>
+    </div>
+</nav>

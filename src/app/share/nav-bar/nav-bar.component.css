@@ -1,0 +1,38 @@
+*{
+  list-style: none;
+
+}
+div p{
+  margin-left: 10px;
+}
+.customNavBar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+.ul-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.ul-list li a {
+  text-decoration: none;
+
+}
+.inderLine{
+
+}
+.search-input>input{
+  outline: none;
+  border: none;
+  border-bottom: 1px solid white;
+  caret-color: white;
+  color: white;
+  width: 300px;
+}
+input[type='text']::placeholder{
+display: flex;
+justify-content: flex-start;
+align-items: center;
+}

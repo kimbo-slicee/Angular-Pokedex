@@ -35,9 +35,13 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/materialize-css/dist/css/materialize.min.css",
+              "node_modules/sweetalert2/src/sweetalert2.scss",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/materialize-css/dist/js/materialize.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -101,5 +105,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "3cafdc91-c261-4418-9cde-082c3cdeef81"
   }
 }
