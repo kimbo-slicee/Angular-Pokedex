@@ -1,6 +1,10 @@
-<div class="text-primary" *ngIf="!pokemons">Pokemon's Note Found <i class="fa-2"></i></div>
-<h1 class='center'>Pokémons</h1>
+<div class="text-primary" *ngIf="!pokemons">
+  <div class="progress">
+    <div class="indeterminate"></div>
+  </div></div>
+<h1 class='center'>Pokédex</h1>
 <div class='container'>
+  <app-search-pokemon></app-search-pokemon>
   <div class="row">
     <div *ngFor='let pokemon of pokemons' class="col s6 m4" >
       <div class="card horizontal customStyle" pkmnBorderCard (click)="pokemonDetails(pokemon)">

@@ -70,21 +70,14 @@ export class PokemonService implements OnInit{
   }
   /*Search Function */
   searchPokemone(term:string):Observable<Pokemon[] | []>{
-    return  this.httpClient.get<Pokemon[]>(`api/pokemons/${term}`).pipe(
-      tap(resp=>console.log(resp)),
+    return  this.httpClient.get<Pokemon[]>(`api/pokemons/?name=${term}`).pipe(
+      tap(resp=>console.table(resp)),
       catchError(err => {
         console.log((err))
         return  of([])
       })
     )
   }
-
-
-
-
-
-
-
   getTypes():string[]{
     return [
       'Plante',
