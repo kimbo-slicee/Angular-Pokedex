@@ -16,7 +16,6 @@ const pokemoRoutes:Routes=[
   {path:'pokemon/add',component:AddPokemoneComponent, canActivate:[authGuard]},
   {path:'pokemon/:id',component:PokemonDetailsComponent, canActivate:[authGuard]},
   {path:'pokemon',component:PokemonListComponent, canActivate:[authGuard]},
-
 ]
 
 

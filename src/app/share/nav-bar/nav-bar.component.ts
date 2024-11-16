@@ -8,10 +8,10 @@ import { Component } from '@angular/core';
 export class NavBarComponent {
   currentAction:any;
   actions:any[]=[
-    {page:'/pokemon',name:'Home',icon:'material-icons'},
-    {page:'/details',name:'About',icon:'material-icons'},
-    {page:'/pokemon',name:'Home',icon:'material-icons'},
-    {page:'/home',name:'Home',icon:'material-icons'}
+    {page:'/pokemon',name:'HOME'},
+    {page:'/details',name:'ABOUT'},
+    {page:'/pokemon',name:'SERVICES'},
+    {page:'/home',name:'CONDITIONS'}
 
   ]
 
